@@ -1,0 +1,77 @@
+.relatedproducts{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+
+.relatedproducts h1{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.relatedproducts hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+.relatedproducts-items {
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap; 
+    justify-content: center; 
+}
+
+.relatedproducts-items .item-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    width: 250px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+.relatedproducts-items .item-card img {
+    width: 100%; 
+    height: auto; 
+    border-bottom: 1px solid #e0e0e0; 
+}
+
+.relatedproducts-items .item-card h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+    text-align: center;
+    color: #171717;
+}
+
+.relatedproducts-items .item-card div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.relatedproducts-items .item-card div span {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.relatedproducts-items .item-card div .old-price {
+    text-decoration: line-through;
+    color: #b0b0b0; 
+
+}
+.relatedproducts-items .item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}

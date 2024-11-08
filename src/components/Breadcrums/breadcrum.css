@@ -1,0 +1,38 @@
+.breadcrum {
+    font-family: Arial, sans-serif; /* Change to your desired font */
+    font-size: 16px; /* Set the default font size */
+    color: #333; /* Set the default text color */
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Space between the items */
+}
+
+.breadcrum img {
+    width: 15px; /* Adjust the size of the arrow icon */
+    height: 15px;
+    margin: 0 5px; /* Space around the arrow */
+}
+
+.breadcrum span {
+    font-weight: bold; /* Optional: make categories and product names bold */
+}
+
+.breadcrum a {
+    color: #0073e6; /* Link color for clickable elements */
+    text-decoration: none; /* Remove underline if any */
+}
+
+.breadcrum a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Example to change color and font-size for specific parts of the breadcrumb */
+.breadcrum .product-name {
+    font-size: 18px;
+    color: #ff6600; /* Example color for product name */
+}
+
+.breadcrum .category {
+    font-size: 16px;
+    color: #555; /* Darker color for category */
+}

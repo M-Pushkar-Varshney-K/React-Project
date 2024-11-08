@@ -1,0 +1,155 @@
+.productdisplay {
+    display: flex;
+    gap: 40px;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.productdisplay-left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex-basis: 40%;
+}
+
+.productdisplay-img-list {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.productdisplay-img-list img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.productdisplay-img-list img:hover {
+    transform: scale(1.05);
+}
+
+.productdisplay-main-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.productdisplay-right {
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.productdisplay-right h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+}
+
+.productdisplay-right-star {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.productdisplay-right-star img {
+    width: 20px;
+    height: 20px;
+}
+
+.productdisplay-right-star p {
+    font-size: 14px;
+    color: #666;
+}
+
+.productdisplay-right-prices {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.productdisplay-right-price-old {
+    font-size: 18px;
+    color: #999;
+    text-decoration: line-through;
+}
+
+.productdisplay-right-price-new {
+    font-size: 24px;
+    font-weight: 700;
+    color: #d32f2f;
+}
+
+.productdisplay-right-decription {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.productdisplay-right-size {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.productdisplay-right-size h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.productdisplay-right-size div {
+    display: flex;
+    gap: 10px;
+}
+
+.productdisplay-right-size div div {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    border-radius: 50%; /* Circular shape */
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    border: 1px solid #e0e0e0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.productdisplay-right-size div div:hover {
+    background-color: #d32f2f;
+    color: #fff;
+}
+
+button {
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #b71c1c;
+}
+
+.productdisplay-right-category {
+    font-size: 14px;
+    color: #555;
+}
+
+.productdisplay-right-category span {
+    font-weight: 600;
+}
