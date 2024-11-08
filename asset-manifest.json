@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/React-Project/static/css/main.a11024ed.css",
+    "main.js": "/React-Project/static/js/main.ebbe2b98.js",
+    "static/js/453.6fe24049.chunk.js": "/React-Project/static/js/453.6fe24049.chunk.js",
+    "static/media/banner_kids.png": "/React-Project/static/media/banner_kids.fff815a581793a7380fb.png",
+    "static/media/banner_women.png": "/React-Project/static/media/banner_women.5a27fc4e4533e57e4676.png",
+    "static/media/banner_mens.png": "/React-Project/static/media/banner_mens.eed7197157196f319b17.png",
+    "static/media/hero_image.png": "/React-Project/static/media/hero_image.09ff1c4114792a6143c2.png",
+    "static/media/product_30.png": "/React-Project/static/media/product_30.758a2a62ab1e3f4a2024.png",
+    "static/media/product_24.png": "/React-Project/static/media/product_24.f4184a72fa92a6ecc063.png",
+    "static/media/product_29.png": "/React-Project/static/media/product_29.2ba03d41083ff8b2be2d.png",
+    "static/media/hand_icon.png": "/React-Project/static/media/hand_icon.9c7487cecb600f30901b.png",
+    "static/media/M2.jpg": "/React-Project/static/media/M2.90086083df9004aac0b5.jpg",
+    "static/media/M1.jpg": "/React-Project/static/media/M1.2e8491ca74f5dd293eb7.jpg",
+    "static/media/C1.jpg": "/React-Project/static/media/C1.11eff2136de39476573f.jpg",
+    "static/media/W5.jpg": "/React-Project/static/media/W5.3b522e5b009199cfc846.jpg",
+    "index.html": "/React-Project/index.html",
+    "main.a11024ed.css.map": "/React-Project/static/css/main.a11024ed.css.map",
+    "main.ebbe2b98.js.map": "/React-Project/static/js/main.ebbe2b98.js.map",
+    "453.6fe24049.chunk.js.map": "/React-Project/static/js/453.6fe24049.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a11024ed.css",
+    "static/js/main.ebbe2b98.js"
+  ]
+}
