@@ -68,6 +68,7 @@ const LogIn: React.FC = () => {
         message: error.message,
         color: "red",
       });
+    }finally{
       setIsLoading(false);
     }
   };
@@ -79,6 +80,7 @@ const LogIn: React.FC = () => {
         message: "Email and Password are required",
         color: "red",
       });
+      setIsLoading(false);
       return;
     }
 
@@ -195,8 +197,9 @@ const LogIn: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={handleLogIn}
+              disabled={isLoading}
               type="button"
-              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              className="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50 disabled:cursor-not-allowed"
             >
               {isLoading ? "Logging In..." : "Log In"}
             </motion.button>
