@@ -10,25 +10,23 @@ const Chat: React.FC = () => {
     message: "",
     color: "",
   });
-
+  
   // Use useRef to persist socket connection across renders
   const socketRef = useRef<Socket | null>(null);
 
   useEffect(() => {
     // Create socket connection only once when component mounts
     socketRef.current = io(import.meta.env.VITE_NODE_ENV);
-
+    
     // Listen for messages from the server
-    socketRef.current.on("reci_message", (data) => {
-      console.log("Socket connected");
-      console.log("Received message:", data); // Log the data being received
+    socketRef.current.on("reci_message", (data) => {// Log the data being received
       if (data && data.message) {
         setReceivedMessages((prevMessages) => [data.message, ...prevMessages]);
       } else {
         console.error("Message format is incorrect:", data);
       }
     });
-
+    
     // Cleanup socket connection when component unmounts
     return () => {
       socketRef.current?.disconnect();
@@ -43,7 +41,7 @@ const Chat: React.FC = () => {
       return () => clearTimeout(timer);
     }
   }, [alert]);
-
+  
   const sendMessage = () => {
     if (message === "") {
       setAlert({
@@ -53,10 +51,11 @@ const Chat: React.FC = () => {
       });
       return;
     }
-
+    
     // Emit message to server using socketRef.current
     if (socketRef.current) {
       socketRef.current.emit("send_message", { message });
+      setMessage("");
     } else {
       console.error("Socket is not connected.");
     }
